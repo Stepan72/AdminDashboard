@@ -3,6 +3,12 @@ import React, { useEffect } from "react";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Sidebar, ThemeSettings } from "@components";
+// Registering Syncfusion license key
+import { registerLicense } from "@syncfusion/ej2-base";
+
+registerLicense(
+  "ORg4AjUWIQA/Gnt2VFhiQldPd11dXmJWd1p/THNYflR1fV9DaUwxOX1dQl9gSXtQd0ViWnpfeXxdQGM="
+);
 
 function Home() {
   const activeMenu = false;
