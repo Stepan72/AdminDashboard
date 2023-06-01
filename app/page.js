@@ -46,7 +46,7 @@ function Home() {
             <Navbar />
           </div>
         </div>
-        {"<Ecommerce />"}
+        {"Ecommerce /"}
       </div>
     </div>
   );
