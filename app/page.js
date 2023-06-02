@@ -11,7 +11,7 @@ registerLicense(
 );
 
 function Home() {
-  const activeMenu = false;
+  const activeMenu = true;
 
   return (
     <div>
