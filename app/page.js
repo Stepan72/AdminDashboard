@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+import StateContext from "@context/state-context";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Navbar, Footer, Sidebar, ThemeSettings } from "@components";
@@ -11,7 +12,7 @@ registerLicense(
 );
 
 function Home() {
-  const activeMenu = true;
+  const { activeMenu } = useContext(StateContext);
 
   return (
     <div>

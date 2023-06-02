@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import StateContext from "@context/state-context";
 import Link from "next/link";
 import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
@@ -6,7 +7,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "@public/assets/dummy";
 
 function Sidebar() {
-  const activeMenu = true;
+  const { activeMenu, setActiveMenu } = useContext(StateContext);
 
   //// Нужно будет через useState сделать активный линк через хендлер
   const activeLinkState = false;
@@ -23,7 +24,9 @@ function Sidebar() {
           <div className="flex justify-between items-center">
             <Link
               href="/"
-              onClick={() => {}}
+              onClick={() => {
+                setActiveMenu();
+              }}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight text-slate-900 dark:text-white "
             >
               <SiShopware className="text-3x" />
@@ -32,7 +35,9 @@ function Sidebar() {
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"
-                onClick={() => {}}
+                onClick={() => {
+                  setActiveMenu();
+                }}
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
                 <MdOutlineCancel />
