@@ -25,7 +25,7 @@ function Sidebar() {
             <Link
               href="/"
               onClick={() => {
-                setActiveMenu();
+                setActiveMenu(false);
               }}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight text-slate-900 dark:text-white "
             >
@@ -36,7 +36,7 @@ function Sidebar() {
               <button
                 type="button"
                 onClick={() => {
-                  setActiveMenu();
+                  setActiveMenu((prevState) => !prevState);
                 }}
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
               >
