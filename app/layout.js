@@ -1,5 +1,6 @@
 import ContextProvider from "@context/ContextProvider";
 import "./styles/globals.css";
+import NavSideBarWrapper from "@components/NavSidebarWrapper";
 
 export const metadata = {
   title: "Admin Dashboard",
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icon.png" />
       </head>
       <body>
-        <ContextProvider>{children}</ContextProvider>
+        <ContextProvider>
+          <NavSideBarWrapper>{children}</NavSideBarWrapper>
+        </ContextProvider>
       </body>
     </html>
   );
