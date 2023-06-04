@@ -13,6 +13,7 @@ registerLicense(
 );
 
 function NavSideBarWrapper({ children }) {
+  console.log("render wrapper");
   const { activeMenu } = useContext(StateContext);
 
   return (
@@ -47,8 +48,8 @@ function NavSideBarWrapper({ children }) {
           <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
             <Navbar />
           </div>
+          {children}
         </div>
-        {children}
       </div>
     </div>
   );

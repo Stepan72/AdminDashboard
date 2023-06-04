@@ -70,7 +70,9 @@ function Sidebar() {
                         }`}
                       >
                         {link.icon}
-                        <span className="capitalize">{link.name}</span>
+                        <span className="capitalize">
+                          {link.name ? link.name : <p>Ecommerce</p>}
+                        </span>
                       </Link>
                     );
                   })}
