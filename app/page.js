@@ -16,9 +16,9 @@ function Ecommerce() {
   const { activeMenu } = useContext(StateContext);
 
   return (
-    <div className="mt-12">
+    <div className="mt-4">
       <div className="flex flex-wrap  justify-center  ">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:mx-28 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
+        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 lg:h-60 rounded-xl w-full lg:mx-28 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
