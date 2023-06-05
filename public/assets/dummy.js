@@ -85,7 +85,6 @@ const gridEmployeeProfile = (props) => (
       src={props.EmployeeImage}
       alt="employee"
     />
-    <p>{props.Name}</p>
   </div>
 );
 
@@ -469,11 +468,11 @@ export const customersGrid = [
 export const employeesGrid = [
   {
     headerText: "Employee",
-    width: "150",
+    width: "100",
     template: gridEmployeeProfile,
     textAlign: "Center",
   },
-  { field: "Name", headerText: "", width: "0", textAlign: "Center" },
+  { field: "Name", headerText: "Name", width: "140", textAlign: "Center" },
   {
     field: "Title",
     headerText: "Designation",
@@ -1475,7 +1474,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 2,
@@ -1484,7 +1483,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1493,7 +1492,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1502,7 +1501,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1511,7 +1510,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1520,7 +1519,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1529,7 +1528,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1538,7 +1537,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1547,7 +1546,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1556,7 +1555,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1565,7 +1564,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1574,7 +1573,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1583,7 +1582,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1592,7 +1591,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1601,7 +1600,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 2,
@@ -1610,7 +1609,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1619,7 +1618,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1628,7 +1627,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1637,7 +1636,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1646,7 +1645,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1655,7 +1654,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1664,7 +1663,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1673,7 +1672,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1682,7 +1681,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1691,7 +1690,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1700,7 +1699,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1709,7 +1708,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1718,7 +1717,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1727,7 +1726,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1736,7 +1735,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1745,7 +1744,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1754,7 +1753,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1763,7 +1762,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1772,7 +1771,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1781,7 +1780,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1790,7 +1789,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1799,7 +1798,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1808,7 +1807,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1817,7 +1816,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1826,7 +1825,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1835,7 +1834,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1844,7 +1843,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1853,7 +1852,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1862,7 +1861,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1871,7 +1870,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1880,7 +1879,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1889,7 +1888,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1898,7 +1897,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1907,7 +1906,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1916,7 +1915,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1925,7 +1924,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1934,7 +1933,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -1943,7 +1942,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -1952,7 +1951,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -1961,7 +1960,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -1970,7 +1969,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 1,
@@ -1979,7 +1978,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 2,
@@ -1988,7 +1987,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar3,
+    EmployeeImage: "assets/avatar3.png",
   },
   {
     EmployeeID: 3,
@@ -1997,7 +1996,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar4,
+    EmployeeImage: "assets/avatar4.jpg",
   },
   {
     EmployeeID: 4,
@@ -2006,7 +2005,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
   {
     EmployeeID: 5,
@@ -2015,7 +2014,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 4,
@@ -2024,7 +2023,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar,
+    EmployeeImage: "assets/avatar.jpg",
   },
   {
     EmployeeID: 5,
@@ -2033,7 +2032,7 @@ export const employeesData = [
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
-    EmployeeImage: avatar2,
+    EmployeeImage: "assets/avatar2.jpg",
   },
 ];
 
