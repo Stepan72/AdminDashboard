@@ -896,6 +896,7 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
+    field: "Image",
     headerText: "Image",
     template: gridOrderImage,
     textAlign: "Center",
@@ -927,7 +928,8 @@ export const ordersGrid = [
     template: gridOrderStatus,
     field: "OrderItems",
     textAlign: "Center",
-    width: "120",
+    width: "180",
+    padding: "2px",
   },
   {
     field: "OrderID",
@@ -2045,7 +2047,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    // ProductImage: product6,
+    ProductImage: "assets/product6.jpg",
   },
   {
     OrderID: 345653,
@@ -2055,7 +2058,8 @@ export const ordersData = [
     Location: "Delhi",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product5,
+    // ProductImage: product5,
+    ProductImage: "assets/product5.jpg",
   },
   {
     OrderID: 390457,
@@ -2065,7 +2069,8 @@ export const ordersData = [
     Location: "New York",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product7,
+    // ProductImage: product7,
+    ProductImage: "assets/product7.jpg",
   },
   {
     OrderID: 893486,
@@ -2075,7 +2080,8 @@ export const ordersData = [
     Location: "Germany",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 748975,
@@ -2085,7 +2091,8 @@ export const ordersData = [
     Location: "Spain",
     Status: "rejected",
     StatusBg: "red",
-    ProductImage: product1,
+    // ProductImage: product1,
+    ProductImage: "assets/product1.jpg",
   },
   {
     OrderID: 94757,
@@ -2095,7 +2102,8 @@ export const ordersData = [
     Location: "USA",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product2,
+    // ProductImage: product2,
+    ProductImage: "assets/product2.jpg",
   },
   {
     OrderID: 944895,
@@ -2105,7 +2113,8 @@ export const ordersData = [
     Location: "USA",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product3,
+    // ProductImage: product3,
+    ProductImage: "assets/product3.jpg",
   },
   {
     OrderID: 845954,
@@ -2115,7 +2124,8 @@ export const ordersData = [
     Location: "USA",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 845954,
@@ -2181,7 +2191,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    // ProductImage: product6,
+    ProductImage: "assets/product6.jpg",
   },
   {
     OrderID: 345653,
@@ -2191,7 +2202,8 @@ export const ordersData = [
     Location: "Delhi",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product5,
+    // ProductImage: product5,
+    ProductImage: "assets/product5.jpg",
   },
   {
     OrderID: 390457,
@@ -2201,7 +2213,8 @@ export const ordersData = [
     Location: "New York",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product7,
+    // ProductImage: product7,
+    ProductImage: "assets/product7.jpg",
   },
   {
     OrderID: 893486,
@@ -2211,7 +2224,8 @@ export const ordersData = [
     Location: "Germany",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 748975,
@@ -2221,7 +2235,8 @@ export const ordersData = [
     Location: "Spain",
     Status: "rejected",
     StatusBg: "red",
-    ProductImage: product1,
+    // ProductImage: product1,
+    ProductImage: "assets/product1.jpg",
   },
   {
     OrderID: 94757,
@@ -2231,7 +2246,8 @@ export const ordersData = [
     Location: "USA",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product2,
+    // ProductImage: product2,
+    ProductImage: "assets/product2.jpg",
   },
   {
     OrderID: 944895,
@@ -2241,7 +2257,8 @@ export const ordersData = [
     Location: "USA",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product3,
+    // ProductImage: product3,
+    ProductImage: "assets/product3.jpg",
   },
   {
     OrderID: 845954,
@@ -2251,7 +2268,8 @@ export const ordersData = [
     Location: "USA",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 845954,
@@ -2317,7 +2335,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    // ProductImage: product6,
+    ProductImage: "assets/product6.jpg",
   },
   {
     OrderID: 345653,
@@ -2327,7 +2346,8 @@ export const ordersData = [
     Location: "Delhi",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product5,
+    // ProductImage: product5,
+    ProductImage: "assets/product5.jpg",
   },
   {
     OrderID: 390457,
@@ -2337,7 +2357,8 @@ export const ordersData = [
     Location: "New York",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product7,
+    // ProductImage: product7,
+    ProductImage: "assets/product7.jpg",
   },
   {
     OrderID: 893486,
@@ -2347,7 +2368,8 @@ export const ordersData = [
     Location: "Germany",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 748975,
@@ -2357,7 +2379,8 @@ export const ordersData = [
     Location: "Spain",
     Status: "rejected",
     StatusBg: "red",
-    ProductImage: product1,
+    // ProductImage: product1,
+    ProductImage: "assets/product1.jpg",
   },
   {
     OrderID: 94757,
@@ -2367,7 +2390,8 @@ export const ordersData = [
     Location: "USA",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product2,
+    // ProductImage: product2,
+    ProductImage: "assets/product2.jpg",
   },
   {
     OrderID: 944895,
@@ -2377,7 +2401,8 @@ export const ordersData = [
     Location: "USA",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product3,
+    // ProductImage: product3,
+    ProductImage: "assets/product3.jpg",
   },
   {
     OrderID: 845954,
@@ -2387,7 +2412,8 @@ export const ordersData = [
     Location: "USA",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 845954,
@@ -2453,7 +2479,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    // ProductImage: product6,
+    ProductImage: "assets/product6.jpg",
   },
   {
     OrderID: 345653,
@@ -2463,7 +2490,8 @@ export const ordersData = [
     Location: "Delhi",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product5,
+    // ProductImage: product5,
+    ProductImage: "assets/product5.jpg",
   },
   {
     OrderID: 390457,
@@ -2473,7 +2501,8 @@ export const ordersData = [
     Location: "New York",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product7,
+    // ProductImage: product7,
+    ProductImage: "assets/product7.jpg",
   },
   {
     OrderID: 893486,
@@ -2483,7 +2512,8 @@ export const ordersData = [
     Location: "Germany",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 748975,
@@ -2493,7 +2523,8 @@ export const ordersData = [
     Location: "Spain",
     Status: "rejected",
     StatusBg: "red",
-    ProductImage: product1,
+    // ProductImage: product1,
+    ProductImage: "assets/product1.jpg",
   },
   {
     OrderID: 94757,
@@ -2503,7 +2534,8 @@ export const ordersData = [
     Location: "USA",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product2,
+    // ProductImage: product2,
+    ProductImage: "assets/product2.jpg",
   },
   {
     OrderID: 944895,
@@ -2513,7 +2545,8 @@ export const ordersData = [
     Location: "USA",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product3,
+    // ProductImage: product3,
+    ProductImage: "assets/product3.jpg",
   },
   {
     OrderID: 845954,
@@ -2523,7 +2556,8 @@ export const ordersData = [
     Location: "USA",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 845954,
@@ -2589,7 +2623,8 @@ export const ordersData = [
     Location: "USA",
     Status: "pending",
     StatusBg: "#FB9678",
-    ProductImage: product6,
+    // ProductImage: product6,
+    ProductImage: "assets/product6.jpg",
   },
   {
     OrderID: 345653,
@@ -2599,7 +2634,8 @@ export const ordersData = [
     Location: "Delhi",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product5,
+    // ProductImage: product5,
+    ProductImage: "assets/product5.jpg",
   },
   {
     OrderID: 390457,
@@ -2609,7 +2645,8 @@ export const ordersData = [
     Location: "New York",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product7,
+    // ProductImage: product7,
+    ProductImage: "assets/product7.jpg",
   },
   {
     OrderID: 893486,
@@ -2619,7 +2656,8 @@ export const ordersData = [
     Location: "Germany",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 748975,
@@ -2629,7 +2667,8 @@ export const ordersData = [
     Location: "Spain",
     Status: "rejected",
     StatusBg: "red",
-    ProductImage: product1,
+    // ProductImage: product1,
+    ProductImage: "assets/product1.jpg",
   },
   {
     OrderID: 94757,
@@ -2639,7 +2678,8 @@ export const ordersData = [
     Location: "USA",
     Status: "canceled",
     StatusBg: "#FF5C8E",
-    ProductImage: product2,
+    // ProductImage: product2,
+    ProductImage: "assets/product2.jpg",
   },
   {
     OrderID: 944895,
@@ -2649,7 +2689,8 @@ export const ordersData = [
     Location: "USA",
     Status: "active",
     StatusBg: "#03C9D7",
-    ProductImage: product3,
+    // ProductImage: product3,
+    ProductImage: "assets/product3.jpg",
   },
   {
     OrderID: 845954,
@@ -2659,7 +2700,8 @@ export const ordersData = [
     Location: "USA",
     Status: "complete",
     StatusBg: "#8BE78B",
-    ProductImage: product4,
+    // ProductImage: product4,
+    ProductImage: "assets/product4.jpg",
   },
   {
     OrderID: 845954,

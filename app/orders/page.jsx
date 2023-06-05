@@ -20,7 +20,6 @@ import { Header } from "@components";
 function Orders() {
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
-      PAGE IN WORK!!!
       <Header category="Page" title="Orders" />
       <GridComponent
         id="gridcomp"
@@ -33,9 +32,9 @@ function Orders() {
         // editSettings={editing}
       >
         <ColumnsDirective>
-          {ordersGrid.map((el, index) => {
-            <ColumnDirective key={index} {...el} />;
-          })}
+          {ordersGrid.map((item, index) => (
+            <ColumnDirective key={index} {...item} />
+          ))}
         </ColumnsDirective>
         <Inject
           services={[
@@ -55,5 +54,3 @@ function Orders() {
 }
 
 export default Orders;
-
-/// 2:22:27
