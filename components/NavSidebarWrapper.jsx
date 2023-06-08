@@ -14,7 +14,7 @@ registerLicense(
 
 function NavSideBarWrapper({ children }) {
   console.log("render wrapper");
-  const { activeMenu, themeSettings, setThemeSettings } =
+  const { activeMenu, themeSettings, setThemeSettings, currentColor } =
     useContext(StateContext);
 
   return (
@@ -25,7 +25,7 @@ function NavSideBarWrapper({ children }) {
             <button
               type="button"
               className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white"
-              style={{ background: "blue", borderRadius: "50%" }}
+              style={{ background: currentColor, borderRadius: "50%" }}
               onClick={() => {
                 setThemeSettings(true);
               }}

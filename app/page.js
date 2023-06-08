@@ -13,7 +13,7 @@ import {
 
 function Ecommerce() {
   console.log("render main");
-  const { activeMenu } = useContext(StateContext);
+  const { activeMenu, currentColor } = useContext(StateContext);
 
   return (
     <div className="mt-4">
@@ -28,7 +28,7 @@ function Ecommerce() {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="blue"
+              bgColor={currentColor}
               text="Download"
               borderRadius="10px"
               size="md"
@@ -105,19 +105,19 @@ function Ecommerce() {
               </div>
               <div className="mt-5">
                 <SparkLine
-                  currentColor="blue"
+                  currentColor={currentColor}
                   id="line-sparkline"
                   type="Line"
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
-                  color="blue"
+                  color={currentColor}
                 />
               </div>
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor="blue"
+                  bgColor={currentColor}
                   text="Download Report"
                   borderRadius="10px"
                 />

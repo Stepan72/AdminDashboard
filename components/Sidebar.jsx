@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import StateContext from "@context/state-context";
 import Link from "next/link";
 import { SiShopware } from "react-icons/si";
@@ -7,13 +7,12 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "@public/assets/dummy";
 
 function Sidebar() {
-  const { activeMenu, setActiveMenu, screenSize } = useContext(StateContext);
+  const { activeMenu, setActiveMenu, screenSize, currentColor } =
+    useContext(StateContext);
+  const [activeLinkState, setActiveLinkState] = useState(null);
+  // console.log(activeLinkState, currentColor);
 
-  //// Нужно будет через useState сделать активный линк через хендлер
-  const activeLinkState = false;
-
-  const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2";
+  const activeLink = `flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2 bg-[${currentColor}]`;
   const normalLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
 
@@ -64,9 +63,12 @@ function Sidebar() {
                         key={link.name}
                         onClick={() => {
                           handleCloseSideBar();
+                          setActiveLinkState(link.name);
                         }}
                         className={`${
-                          activeLinkState ? activeLink : normalLink
+                          activeLinkState === link.name
+                            ? activeLink
+                            : normalLink
                         }`}
                       >
                         {link.icon}
