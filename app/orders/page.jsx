@@ -18,6 +18,7 @@ import { ordersData, contextMenuItems, ordersGrid } from "@public/assets/dummy";
 import { Header } from "@components";
 
 function Orders() {
+  const editing = { allowDeleting: true, allowEditing: true };
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Page" title="Orders" />
@@ -29,7 +30,7 @@ function Orders() {
         allowExcelExport
         allowPdfExport
         contextMenuItems={contextMenuItems}
-        // editSettings={editing}
+        editSettings={editing}
       >
         <ColumnsDirective>
           {ordersGrid.map((item, index) => (

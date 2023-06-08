@@ -13,6 +13,7 @@ import { employeesData, employeesGrid } from "@public/assets/dummy";
 import { Header } from "@components";
 
 function Employees() {
+  const editing = { allowDeleting: true, allowEditing: true };
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Page" title="Employees" />
@@ -24,8 +25,7 @@ function Employees() {
         allowPdfExport
         toolbar={["Search"]}
         width="auto"
-
-        // editSettings={editing}
+        editSettings={editing}
       >
         <ColumnsDirective>
           {employeesGrid.map((item, index) => (

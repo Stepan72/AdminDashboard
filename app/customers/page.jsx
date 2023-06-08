@@ -16,6 +16,7 @@ import { customersData, customersGrid } from "@public/assets/dummy";
 import { Header } from "@components";
 
 function Customers() {
+  const selectionsettings = { persistSelection: true };
   return (
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Page" title="Customers" />
@@ -27,6 +28,7 @@ function Customers() {
         allowPdfExport
         toolbar={["Delete"]}
         editSettings={{ allowDeleting: true, allowEditing: true }}
+        selectionSettings={selectionsettings}
       >
         <ColumnsDirective>
           {customersGrid.map((item, index) => (
