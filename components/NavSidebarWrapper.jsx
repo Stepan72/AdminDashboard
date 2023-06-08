@@ -14,11 +14,16 @@ registerLicense(
 
 function NavSideBarWrapper({ children }) {
   console.log("render wrapper");
-  const { activeMenu, themeSettings, setThemeSettings, currentColor } =
-    useContext(StateContext);
+  const {
+    activeMenu,
+    themeSettings,
+    setThemeSettings,
+    currentColor,
+    currentMode,
+  } = useContext(StateContext);
 
   return (
-    <div>
+    <div className={currentMode === "Dark" ? "dark" : ""}>
       <div className="flex relative dark:bg-main-dark-bg ">
         <div className="fixed right-4 bottom-4" style={{ zIndex: "1000" }}>
           <TooltipComponent content="Settings" position="Top">
@@ -46,7 +51,7 @@ function NavSideBarWrapper({ children }) {
         <div
           className={`${
             activeMenu ? "md:ml-72" : "flex-2"
-          } dark:bg-main-bg bg-main-bg min-h-screen w-full
+          } dark:bg-main-dark-bg bg-main-bg min-h-screen w-full
           `}
         >
           <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
