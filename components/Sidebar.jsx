@@ -9,10 +9,10 @@ import { links } from "@public/assets/dummy";
 function Sidebar() {
   const { activeMenu, setActiveMenu, screenSize, currentColor } =
     useContext(StateContext);
-  const [activeLinkState, setActiveLinkState] = useState(null);
+  const [activeLinkState, setActiveLinkState] = useState("");
   // console.log(activeLinkState, currentColor);
 
-  const activeLink = `flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2 bg-[${currentColor}]`;
+  const activeLink = `flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2`;
   const normalLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
 
@@ -70,6 +70,10 @@ function Sidebar() {
                             ? activeLink
                             : normalLink
                         }`}
+                        style={{
+                          backgroundColor:
+                            activeLinkState === link.name ? currentColor : "",
+                        }}
                       >
                         {link.icon}
                         <span className="capitalize">
