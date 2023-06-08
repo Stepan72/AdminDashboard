@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext, useState } from "react";
 import StateContext from "@context/state-context";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import { links } from "@public/assets/dummy";
 function Sidebar() {
   const { activeMenu, setActiveMenu, screenSize, currentColor } =
     useContext(StateContext);
-  const [activeLinkState, setActiveLinkState] = useState("");
+  const [activeLinkState, setActiveLinkState] = useState(undefined);
   // console.log(activeLinkState, currentColor);
 
   const activeLink = `flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2`;
