@@ -6,3 +6,5 @@ function Pyramid() {
 }
 
 export default Pyramid;
+
+/// start
