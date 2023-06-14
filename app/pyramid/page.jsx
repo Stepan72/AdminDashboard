@@ -7,4 +7,4 @@ function Pyramid() {
 
 export default Pyramid;
 
-/// start
+/// start for pyramid
