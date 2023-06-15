@@ -8,3 +8,4 @@ function Pyramid() {
 export default Pyramid;
 
 /// start for pyramid
+/// initiated
