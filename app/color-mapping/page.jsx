@@ -6,4 +6,4 @@ function ColorMapping() {
 
 export default ColorMapping;
 
-//// Color-mapping start initiated again
+//// Color-mapping start
