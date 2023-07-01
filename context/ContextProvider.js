@@ -31,6 +31,9 @@ function ContextProvider({ children }) {
   function handleClick(clicked) {
     setIsClicked({ ...initialState, [clicked]: true });
   }
+  function handleCancelClick() {
+    setIsClicked(initialState);
+  }
 
   const stateContext = {
     activeMenu,
@@ -46,6 +49,7 @@ function ContextProvider({ children }) {
     setMode,
     themeSettings,
     setThemeSettings,
+    handleCancelClick,
   };
 
   return (

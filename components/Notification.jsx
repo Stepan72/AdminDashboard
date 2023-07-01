@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 
 function Notification() {
-  return <div>Notification</div>;
+  return <div>Notif</div>;
 }
 
 export default Notification;

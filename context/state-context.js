@@ -13,6 +13,7 @@ const StateContext = React.createContext({
   setMode: () => {},
   setActiveMenu: () => {},
   handleClick: () => {},
+  handleCancelClick: () => {},
   setScreenSize: () => {},
 });
 
