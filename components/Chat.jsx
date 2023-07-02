@@ -14,7 +14,7 @@ function Chat() {
           <p className="font-semibold text-lg dark:text-gray-200">Messages</p>
           <button
             type="button"
-            className="text-white text-xs rounded p-1 px-2 bg-orange"
+            className="text-white text-xs rounded p-1 px-2 bg-orange-300 "
           >
             5 New
           </button>
